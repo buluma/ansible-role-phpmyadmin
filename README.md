@@ -2,9 +2,9 @@
 
 phpMyAdmin installation for Linux
 
-|GitHub|GitLab|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![github](https://github.com/buluma/ansible-role-phpmyadmin/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-phpmyadmin/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-phpmyadmin/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-phpmyadmin)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/buluma/phpmyadmin)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/buluma/phpmyadmin)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-phpmyadmin.svg)](https://github.com/buluma/ansible-role-phpmyadmin/releases/)|
+|GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
+|------|------|-------|---------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-phpmyadmin/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-phpmyadmin/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-phpmyadmin/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-phpmyadmin)|[![quality](https://img.shields.io/ansible/quality/58484)](https://galaxy.ansible.com/buluma/phpmyadmin)|[![downloads](https://img.shields.io/ansible/role/d/58484)](https://galaxy.ansible.com/buluma/phpmyadmin)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-phpmyadmin.svg)](https://github.com/buluma/ansible-role-phpmyadmin/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-phpmyadmin.svg)](https://github.com/buluma/ansible-role-phpmyadmin/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr/buluma/ansible-role-phpmyadmin.svg)](https://github.com/buluma/ansible-role-phpmyadmin/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -29,7 +29,7 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
       when: ansible_os_family == 'RedHat'
     - role: buluma.apache
     - role: buluma.mysql
-    - role: geerlingguy.php-versions  # TODO: Rebuild
+    - role: buluma.php_versions
     - role: buluma.php
     - role: geerlingguy.php-mysql  # TODO: Rebuild
     - role: geerlingguy.phpmyadmin  # TODO: Rebuild
@@ -78,7 +78,7 @@ The following roles are used to prepare a system. You can prepare your system in
 |[geerlingguy.repo-remi](https://galaxy.ansible.com/buluma/geerlingguy.repo-remi)|[![Build Status GitHub](https://github.com/buluma/geerlingguy.repo-remi/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/geerlingguy.repo-remi/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/geerlingguy.repo-remi/badges/master/pipeline.svg)](https://gitlab.com/buluma/geerlingguy.repo-remi)|
 |[buluma.apache](https://galaxy.ansible.com/buluma/apache)|[![Build Status GitHub](https://github.com/buluma/ansible-role-apache/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-apache/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-apache/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-apache)|
 |[buluma.mysql](https://galaxy.ansible.com/buluma/mysql)|[![Build Status GitHub](https://github.com/buluma/ansible-role-mysql/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-mysql/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-mysql/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-mysql)|
-|[geerlingguy.php-versions](https://galaxy.ansible.com/buluma/geerlingguy.php-versions)|[![Build Status GitHub](https://github.com/buluma/geerlingguy.php-versions/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/geerlingguy.php-versions/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/geerlingguy.php-versions/badges/master/pipeline.svg)](https://gitlab.com/buluma/geerlingguy.php-versions)|
+|[buluma.php_versions](https://galaxy.ansible.com/buluma/php_versions)|[![Build Status GitHub](https://github.com/buluma/ansible-role-php_versions/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-php_versions/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-php_versions/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-php_versions)|
 |[buluma.php](https://galaxy.ansible.com/buluma/php)|[![Build Status GitHub](https://github.com/buluma/ansible-role-php/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-php/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-php/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-php)|
 |[geerlingguy.php-mysql](https://galaxy.ansible.com/buluma/geerlingguy.php-mysql)|[![Build Status GitHub](https://github.com/buluma/geerlingguy.php-mysql/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/geerlingguy.php-mysql/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/geerlingguy.php-mysql/badges/master/pipeline.svg)](https://gitlab.com/buluma/geerlingguy.php-mysql)|
 |[geerlingguy.phpmyadmin](https://galaxy.ansible.com/buluma/geerlingguy.phpmyadmin)|[![Build Status GitHub](https://github.com/buluma/geerlingguy.phpmyadmin/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/geerlingguy.phpmyadmin/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/geerlingguy.phpmyadmin/badges/master/pipeline.svg)](https://gitlab.com/buluma/geerlingguy.phpmyadmin)|

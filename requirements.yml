@@ -4,7 +4,7 @@ roles:
     when: ansible_os_family == 'RedHat'
   - name: buluma.apache
   - name: buluma.mysql
-  - name: geerlingguy.php-versions
+  - name: buluma.php_versions
   - name: buluma.php
   - name: geerlingguy.php-mysql
   - name: geerlingguy.phpmyadmin

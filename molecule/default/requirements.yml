@@ -2,6 +2,6 @@
 - src: geerlingguy.repo-remi
 - src: buluma.apache
 - src: buluma.mysql
-- src: geerlingguy.php-versions
+- src: buluma.php_versions
 - src: buluma.php
 - src: geerlingguy.php-mysql

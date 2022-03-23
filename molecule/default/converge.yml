@@ -17,7 +17,7 @@
       when: ansible_os_family == 'RedHat'
     - role: buluma.apache
     - role: buluma.mysql
-    - role: geerlingguy.php-versions  # TODO: Rebuild
+    - role: buluma.php_versions
     - role: buluma.php
     - role: geerlingguy.php-mysql  # TODO: Rebuild
     - role: geerlingguy.phpmyadmin  # TODO: Rebuild

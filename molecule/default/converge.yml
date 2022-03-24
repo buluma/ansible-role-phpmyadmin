@@ -20,7 +20,7 @@
     - role: buluma.php_versions
     - role: buluma.php
     - role: geerlingguy.php-mysql  # TODO: Rebuild
-    - role: geerlingguy.phpmyadmin  # TODO: Rebuild
+    - role: buluma.phpmyadmin
 
   post_tasks:
     - name: Ensure phpMyAdmin is running.

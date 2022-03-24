@@ -7,5 +7,5 @@ roles:
   - name: buluma.php_versions
   - name: buluma.php
   - name: geerlingguy.php-mysql
-  - name: geerlingguy.phpmyadmin
+  - name: buluma.phpmyadmin
 collections: []

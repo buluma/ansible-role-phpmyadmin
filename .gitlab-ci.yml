@@ -9,6 +9,8 @@ variables:
   PY_COLORS: 1
 
 molecule:
+  stage: build
+  allow_failure: true
   script:
     - image=${image} tag=${tag} molecule test
   retry: 1
@@ -28,8 +30,12 @@ molecule:
         tag: "bionic"
       - image: "docker-ubuntu-systemd"
         tag: "focal"
+      - image: "docker-ubuntu-systemd"
+        tag: "jammy"
 
 testing:
+  stage: test
+  needs: []
   script:
     - image=${image} tag=${tag} molecule test
   rules:
@@ -51,12 +57,18 @@ testing:
         tag: "bionic"
       - image: "docker-ubuntu-systemd"
         tag: "focal"
+      - image: "docker-ubuntu-systemd"
+        tag: "jammy"
 
 galaxy:
+  stage: deploy
+  needs: []
   script:
     - ansible-galaxy role info buluma.phpmyadmin
 
 role_testing:
+  stage: test
+  needs: []
   script:
     - image=${image} tag=${tag} ansible-galaxy install buluma.phpmyadmin
   retry: 1
@@ -76,3 +88,23 @@ role_testing:
         tag: "bionic"
       - image: "docker-ubuntu-systemd"
         tag: "focal"
+      - image: "docker-ubuntu-systemd"
+        tag: "jammy"
+
+release_job:
+  stage: .post
+  needs: [molecule]
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  rules:
+    - if: $CI_COMMIT_TAG
+  script:
+    - echo "Running the release job."
+  release:
+    tag_name: $CI_COMMIT_TAG
+    name: 'Release $CI_COMMIT_TAG'
+    description: 'Release created using the release-cli.'
+  artifacts:
+    name: "$CI_JOB_STAGE-$CI_COMMIT_REF_NAME"
+    paths:
+      - /
+    expire_in: 1 day

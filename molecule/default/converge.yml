@@ -24,7 +24,7 @@
 
   post_tasks:
     - name: Ensure phpMyAdmin is running.
-      uri:
+      ansible.builtin.uri:
         url: "http://127.0.0.1/phpmyadmin/"
         status_code: 200
       register: result

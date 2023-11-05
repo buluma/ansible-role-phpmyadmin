@@ -5,4 +5,4 @@
 repository:
   description: phpMyAdmin installation for Linux
   homepage: https://buluma.github.io/
-  topics: database, development, web, mysql, mariadb, php, phpmyadmin, ansible, molecule, tox, playbook, hacktoberfest
+  topics: database, development, web, mysql, mariadb, php, phpmyadmin, ansible, molecule, tox, playbook

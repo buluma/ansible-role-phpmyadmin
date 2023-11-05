@@ -1,9 +1,9 @@
 ---
-dependencies:
-  - buluma.apache
-  - buluma.mysql
-  - geerlingguy.php-mysql
-  - buluma.php
+# dependencies:
+#   - buluma.apache
+#   - buluma.mysql
+#   - geerlingguy.php-mysql
+#   - buluma.php
 
 galaxy_info:
   role_name: phpmyadmin
@@ -30,3 +30,8 @@ galaxy_info:
     - mariadb
     - php
     - phpmyadmin
+dependencies:
+  - geerlingguy.apache
+  - geerlingguy.mysql
+  - geerlingguy.php-mysql
+  - geerlingguy.php

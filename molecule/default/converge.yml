@@ -6,6 +6,8 @@
   vars:
     php_version: "7.3"
     phpmyadmin_enablerepo: "remi,remi-php73"
+    phpmyadmin_mysql_user: sp3cial_us3r
+    phpmyadmin_mysql_password: s3cure_password_h3r3
 
   pre_tasks:
     - name: Update apt cache.
@@ -13,13 +15,13 @@
       when: ansible_os_family == 'Debian'
 
   roles:
-    - role: geerlingguy.repo-remi  # TODO: Rebuild
-      when: ansible_os_family == 'RedHat'
-    - role: buluma.apache
-    - role: buluma.mysql
-    - role: buluma.php_versions
-    - role: buluma.php
-    - role: geerlingguy.php-mysql  # TODO: Rebuild
+    # - role: geerlingguy.repo-remi  # TODO: Rebuild
+    #   when: ansible_os_family == 'RedHat'
+    # - role: geerlingguy.apache
+    # - role: geerlingguy.mysql
+    # - role: buluma.php_versions
+    # - role: geerlingguy.php
+    # - role: geerlingguy.php-mysql  # TODO: Rebuild
     - role: buluma.phpmyadmin
 
   post_tasks:

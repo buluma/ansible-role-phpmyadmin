@@ -1,4 +1,4 @@
-# [phpmyadmin](#phpmyadmin)
+# [Ansible role phpmyadmin](#phpmyadmin)
 
 phpMyAdmin installation for Linux
 

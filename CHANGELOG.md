@@ -4,6 +4,10 @@
 
 [Full Changelog](https://github.com/buluma/ansible-role-phpmyadmin/compare/0.1.0...HEAD)
 
+**Closed issues:**
+
+- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#14](https://github.com/buluma/ansible-role-phpmyadmin/issues/14)
+
 **Merged pull requests:**
 
 - Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.3 to 1.0.5 [\#6](https://github.com/buluma/ansible-role-phpmyadmin/pull/6) ([dependabot[bot]](https://github.com/apps/dependabot))

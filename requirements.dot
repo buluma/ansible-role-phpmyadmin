@@ -1,0 +1,21 @@
+digraph PhiloDilemma {
+  label = "Michael Buluma" ;
+  overlap=false
+  {
+    "phpmyadmin" [fillcolor=yellow style=filled penwidth=3]
+    "geerlingguy.repo-remi" [fillcolor=green style=filled]
+    "==" [fillcolor=green style=filled]
+    "geerlingguy.apache" [fillcolor=green style=filled]
+    "geerlingguy.mysql" [fillcolor=green style=filled]
+    "buluma.php_versions" [fillcolor=green style=filled]
+    "geerlingguy.php" [fillcolor=green style=filled]
+    "geerlingguy.php-mysql" [fillcolor=green style=filled]
+  }
+  "phpmyadmin" -> "geerlingguy.repo-remi"
+  "phpmyadmin" -> "=="
+  "phpmyadmin" -> "geerlingguy.apache"
+  "phpmyadmin" -> "geerlingguy.mysql"
+  "phpmyadmin" -> "buluma.php_versions"
+  "phpmyadmin" -> "geerlingguy.php"
+  "phpmyadmin" -> "geerlingguy.php-mysql"
+}

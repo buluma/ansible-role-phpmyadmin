@@ -1,11 +1,11 @@
 ---
-- name: Ensure phpMyAdmin is installed.
+- name: setup-Debian | Ensure phpMyAdmin is installed.
   ansible.builtin.apt:
     name: phpmyadmin
     state: present
   notify: restart apache
 
-- name: Ensure phpMyAdmin config file is included in Apache config.
+- name: setup-Debian | Ensure phpMyAdmin config file is included in Apache config.
   ansible.builtin.lineinfile:
     dest: /etc/apache2/apache2.conf
     state: present

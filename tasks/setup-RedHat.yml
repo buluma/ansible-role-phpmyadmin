@@ -1,5 +1,5 @@
 ---
-- name: Ensure phpMyAdmin is installed.
+- name: setup-RedHat | Ensure phpMyAdmin is installed.
   ansible.builtin.yum:
     name: phpmyadmin
     state: present

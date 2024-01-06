@@ -24,8 +24,4 @@ galaxy_info:
     - mariadb
     - php
     - phpmyadmin
-dependencies:
-  - geerlingguy.apache
-  - geerlingguy.mysql
-  - geerlingguy.php-mysql
-  - geerlingguy.php
+dependencies: []

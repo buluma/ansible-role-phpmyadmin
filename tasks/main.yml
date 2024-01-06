@@ -9,10 +9,14 @@
   when: phpmyadmin_config_file is not defined
 
 # Setup/install tasks.
-- include: setup-RedHat.yml
+- name: Setup RedHat
+  ansible.builtin.import_tasks:
+    file: setup-RedHat.yml
   when: ansible_os_family == 'RedHat'
 
-- include: setup-Debian.yml
+- name: Setup Debian
+  ansible.builtin.import_tasks:
+    file: setup-Debian.yml
   when: ansible_os_family == 'Debian'
 
 - name: Add default username and password for MySQL connection.

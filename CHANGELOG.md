@@ -6,7 +6,17 @@
 
 **Closed issues:**
 
+- Rebuild [\#18](https://github.com/buluma/ansible-role-phpmyadmin/issues/18)
+- Rebuild [\#17](https://github.com/buluma/ansible-role-phpmyadmin/issues/17)
+- Rebuild [\#16](https://github.com/buluma/ansible-role-phpmyadmin/issues/16)
+- Rebuild [\#15](https://github.com/buluma/ansible-role-phpmyadmin/issues/15)
 - Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#14](https://github.com/buluma/ansible-role-phpmyadmin/issues/14)
+- Update action [\#13](https://github.com/buluma/ansible-role-phpmyadmin/issues/13)
+- rebuild action [\#12](https://github.com/buluma/ansible-role-phpmyadmin/issues/12)
+- Rebuild [\#4](https://github.com/buluma/ansible-role-phpmyadmin/issues/4)
+- Rebuild [\#3](https://github.com/buluma/ansible-role-phpmyadmin/issues/3)
+- Rebuild [\#2](https://github.com/buluma/ansible-role-phpmyadmin/issues/2)
+- Rebuild [\#1](https://github.com/buluma/ansible-role-phpmyadmin/issues/1)
 
 **Merged pull requests:**
 

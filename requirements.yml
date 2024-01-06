@@ -1,5 +1,6 @@
 ---
 roles:
+  - name: buluma.bootstrap
   - name: geerlingguy.repo-remi
     when: ansible_os_family == 'RedHat'
   - name: geerlingguy.apache

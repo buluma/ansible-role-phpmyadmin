@@ -4,4 +4,4 @@
     name: phpmyadmin
     state: present
     enablerepo: "{{ phpmyadmin_enablerepo }}"
-  notify: restart apache
+  notify: Restart apache

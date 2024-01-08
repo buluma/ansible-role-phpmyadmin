@@ -1,0 +1,7 @@
+---
+# handlers file for phpmyadmin
+
+- name: Restart apache
+  ansible.builtin.service:
+    name: apache
+    state: restarted

@@ -24,7 +24,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
   pre_tasks:
     - name: Update apt cache.
-      apt: update_cache=true cache_valid_time=600
+      ansible.builtin.apt: update_cache=true cache_valid_time=600
       when: ansible_os_family == 'Debian'
 
   roles:
@@ -98,21 +98,13 @@ The following roles are used to prepare a system. You can prepare your system in
 
 | Requirement | GitHub | Version |
 |-------------|--------|--------|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Ansible Molecule](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-bootstrap.svg)](https://github.com/shadowwalker/ansible-role-bootstrap)|
 |[geerlingguy.repo-remi](https://galaxy.ansible.com/buluma/geerlingguy.repo-remi)|[![Ansible Molecule](https://github.com/buluma/geerlingguy.repo-remi/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/geerlingguy.repo-remi/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/geerlingguy.repo-remi.svg)](https://github.com/shadowwalker/geerlingguy.repo-remi)|
 |[geerlingguy.apache](https://galaxy.ansible.com/buluma/geerlingguy.apache)|[![Ansible Molecule](https://github.com/buluma/geerlingguy.apache/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/geerlingguy.apache/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/geerlingguy.apache.svg)](https://github.com/shadowwalker/geerlingguy.apache)|
 |[geerlingguy.mysql](https://galaxy.ansible.com/buluma/geerlingguy.mysql)|[![Ansible Molecule](https://github.com/buluma/geerlingguy.mysql/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/geerlingguy.mysql/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/geerlingguy.mysql.svg)](https://github.com/shadowwalker/geerlingguy.mysql)|
 |[buluma.php_versions](https://galaxy.ansible.com/buluma/php_versions)|[![Ansible Molecule](https://github.com/buluma/ansible-role-php_versions/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-php_versions/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-php_versions.svg)](https://github.com/shadowwalker/ansible-role-php_versions)|
 |[geerlingguy.php](https://galaxy.ansible.com/buluma/geerlingguy.php)|[![Ansible Molecule](https://github.com/buluma/geerlingguy.php/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/geerlingguy.php/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/geerlingguy.php.svg)](https://github.com/shadowwalker/geerlingguy.php)|
 |[geerlingguy.php-mysql](https://galaxy.ansible.com/buluma/geerlingguy.php-mysql)|[![Ansible Molecule](https://github.com/buluma/geerlingguy.php-mysql/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/geerlingguy.php-mysql/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/geerlingguy.php-mysql.svg)](https://github.com/shadowwalker/geerlingguy.php-mysql)|
-
-## [Dependencies](#dependencies)
-
-Most roles require some kind of preparation, this is done in `molecule/default/prepare.yml`. This role has a "hard" dependency on the following roles:
-
-- geerlingguy.apache
-- geerlingguy.mysql
-- geerlingguy.php-mysql
-- geerlingguy.php
 
 ## [Context](#context)
 
